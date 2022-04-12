@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete responding app landing page website design</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- Custom CSS file link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header section starts -->
+
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#about">about</a>
+            <a href="#usage">usage</a>
+            <a href="#review">review</a>
+            <a href="#pricing">pricing</a>
+            <a href="#contact">contact</a>
+            
+        </nav>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>app landing page</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, ipsum! Rerum amet molestias labore natus, molestiae ipsam rem, a explicabo adipisci, est et porro? Consequuntur, aspernatur non in inventore labore sed fugiat dolorem eligendi ea obcaecati voluptatem voluptate consequatur dicta vel, minus, quos id reiciendis quibusdam temporibus. Repellendus voluptates dignissimos earum accusantium aut iusto eveniet sint sunt facere blanditiis dolore maiores similique molestias cumque, quaerat sapiente eum ducimus temporibus molestiae. Blanditiis, laborum qui. Sapiente veniam pariatur et quis debitis adipisci quisquam molestiae minima illum sit explicabo, reiciendis delectus quo veritatis dolorem vero maiores sed minus dolores qui nihil animi ad!</p>
+            <a href="#" class="btn">get started</a>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- script part -->
+
+    <script>
+        let menu = document.querySelector('#menu-bar');
+        let nav = document.querySelector('.navbar');
+
+        menu.addEventListener('click',()=>{
+            menu.classList.toggle('fa-times');
+            nav.classList.toggle('nav-toggle');
+        });
+
+        window.onscroll = ()=>{
+            menu.classList.remove('fa-times');
+            nav.classList.remove('nav-toggle');
+        }
+    </script>
+</body>
+</html>
